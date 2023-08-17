@@ -11,9 +11,10 @@ void main() {
     var tipAmount = totalBill * (tipPercentage / 100);
     var totalAmount = totalBill + tipAmount;
 
-    print("Tip amount: \$$tipAmount");
+    print("Tip amount: \$${tipAmount.toStringAsFixed(2)}");
     print("Total amount (including tip): \$$totalAmount");
   } catch (e) {
-    print("Invalid input. Please enter valid numeric values for bill amount and tip percentage.");
+    print(
+        "Invalid input. Please enter valid numeric values for bill amount and tip percentage.");
   }
 }
