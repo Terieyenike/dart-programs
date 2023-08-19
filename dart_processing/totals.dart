@@ -7,7 +7,7 @@ void main(List<String> args) {
   }
   final inputFile = args.first;
   final lines = File(inputFile)
-      .readAsLinesSync(); // create a reference to the file using the value passed as an argument and reads all the content and returns them as a list of strings
+      .readAsLinesSync();
   final totalDurationByTag = <String, double>{};
   lines.removeAt(0);
   var totalDuration = 0.0;
